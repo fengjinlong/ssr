@@ -2,13 +2,25 @@ const Vue = require('vue')
 const server = require('express')()
 // const renderer = require('vue-server-renderer').createRenderer()
 
-server.get('*', (req, res) => {
-  const app = new Vue({
+const createApp = function (context) {
+  return new Vue({
     data: {
-      url: req.url
+      url: context.url
     },
     template: `<div>访问的 URL 是： {{ url }}</div>`
   })
+}
+
+server.get('*', (req, res) => {
+  // const app = new Vue({
+  //   data: {
+  //     url: req.url
+  //   },
+  //   template: `<div>访问的 URL 是： {{ url }}</div>`
+  // })
+
+  const context1 = { url: req.url }
+  const app = createApp(context1)
 
   // renderer.renderToString(app, (err, html) => {
   //   if (err) {
