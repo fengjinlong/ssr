@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "s": "node app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -21,5 +20,23 @@
     "express": "^4.17.1",
     "vue": "^2.6.10",
     "vue-server-renderer": "^2.6.10"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-preset-env": "^1.7.0",
+    "chokidar": "^3.0.1",
+    "cross-env": "^5.2.0",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "memory-fs": "^0.4.1",
+    "rimraf": "^2.6.3",
+    "vue-loader": "^15.7.0",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-middleware": "^3.7.0",
+    "webpack-hot-middleware": "^2.25.0",
+    "webpack-merge": "^4.2.1",
+    "webpack-node-externals": "^1.7.2"
   }
 }
