@@ -1,4 +1,3 @@
-// 编译出 vue-ssr-server-bundle.json 供 nodejs 调用
 const webpack = require('webpack')
 const merge = require('webpack-merge')
 const base = require('./webpack.base.config')
@@ -26,4 +25,3 @@ module.exports = merge(base, {
     new VueSSRServerPlugin()
   ]
 })
-

@@ -1,4 +1,3 @@
-// 设置 webpack-dev-middleware 开发环境
 const fs = require('fs')
 const path = require('path')
 const webpack = require('webpack')

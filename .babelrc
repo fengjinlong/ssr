@@ -1,4 +1,3 @@
-// es6 compile to es5 相关配置
 {
   "presets": [
     [

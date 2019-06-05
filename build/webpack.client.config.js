@@ -1,4 +1,3 @@
-// 编译出 vue-ssr-client-manifest.json 文件和 js、css 等文件，供浏览器调用
 const webpack = require('webpack')
 const merge = require('webpack-merge')
 const base = require('./webpack.base.config')
